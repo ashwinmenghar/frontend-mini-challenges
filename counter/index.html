@@ -30,13 +30,22 @@
       const input = document.querySelector(".input");
       const reset = document.querySelector(".reset-btn");
 
-      incrementBtn.addEventListener("click", (e) => {
-        counter.textContent = Number(input.value) + Number(counter.textContent);
+      function updateCounter(value) {
+        const currentCount = Number(counter.textContent);
+        const inputValue = Number(input.value);
+        if (isNaN(inputValue)) {
+          alert("Please enter a valid number");
+          return;
+        }
+        counter.textContent = currentCount + value * inputValue;
+      }
+
+      incrementBtn.addEventListener("click", () => {
+        updateCounter(1);
       });
 
-      decrementBtn.addEventListener("click", (e) => {
-        counter.textContent =
-          parseInt(counter.textContent) - parseInt(input.value);
+      decrementBtn.addEventListener("click", () => {
+        updateCounter(-1);
       });
 
       reset.addEventListener("click", () => {
