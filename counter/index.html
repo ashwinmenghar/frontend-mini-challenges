@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="count">0</h1>
+
+      <div class="btns">
+        <button class="decrement-btn">-</button>
+        <button class="increment-btn">+</button>
+      </div>
+
+      <div class="increment-decrement">
+        <span class="inr-dnr-text"> Increment/Decrement by: </span>
+        <input type="number" class="input" value="1" min="1" max="10" />
+      </div>
+
+      <button class="reset-btn">Reset</button>
+    </div>
+
+    <script>
+      const counter = document.querySelector(".count");
+      const decrementBtn = document.querySelector(".decrement-btn");
+      const incrementBtn = document.querySelector(".increment-btn");
+      const input = document.querySelector(".input");
+      const reset = document.querySelector(".reset-btn");
+
+      incrementBtn.addEventListener("click", (e) => {
+        counter.textContent = Number(input.value) + Number(counter.textContent);
+      });
+
+      decrementBtn.addEventListener("click", (e) => {
+        counter.textContent =
+          parseInt(counter.textContent) - parseInt(input.value);
+      });
+
+      reset.addEventListener("click", () => {
+        counter.textContent = 0;
+      });
+    </script>
+  </body>
+</html>

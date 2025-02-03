@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue,
+    sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.count {
+  font-size: 50px;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.reset-btn {
+  padding: 10px 16px;
+  background-color: #0ff;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.increment-btn,
+.decrement-btn {
+  padding: 10px 16px;
+  background-color: #0ff;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.increment-decrement {
+}
+
+.inr-dnr-text {
+}
+
+.input {
+  width: 5rem;
+  height: 2rem;
+  font-size: 1rem;
+}
