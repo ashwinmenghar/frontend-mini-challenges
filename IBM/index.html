@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>BMI Calculator</h2>
+    </header>
+    <div class="container">
+      <form id="ibm-calculator">
+        <div class="height-container">
+          <label for="height">Height (cm):</label>
+          <input
+            type="number"
+            placeholder="Entry height"
+            id="height"
+            required
+          />
+        </div>
+        <div class="weight-container">
+          <label for="weight">Weight (Kg):</label>
+          <input
+            type="number"
+            placeholder="Entry weight"
+            id="weight"
+            required
+          />
+        </div>
+
+        <button>Calculate IBM</button>
+      </form>
+
+      <h2>Your BMI:</h2>
+      <p id="output"></p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+* {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue,
+    sans-serif;
+}
+body {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem auto;
+  justify-items: center;
+}
+
+input {
+  width: 90%;
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+form {
+  width: 100%;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+button {
+  border: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#output {
+  font-weight: 700;
+}
