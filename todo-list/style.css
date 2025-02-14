@@ -1,0 +1,51 @@
+body {
+  width: 100vw;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#todoItemInput {
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+  font-size: 1.25rem;
+}
+/* 
+.no-elments {
+  display: none;
+} */
+
+.list-container:empty ~ .no-elments {
+  display: block;
+  font-size: 2rem;
+}
+
+.edit {
+  transform: translateX(180 deg);
+}
+
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4rem;
+  gap: 1rem;
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+.edit,
+.save,
+.delete {
+  cursor: pointer;
+}
+
+.edit {
+  transform: rotate(90deg);
+}

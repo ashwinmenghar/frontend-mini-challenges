@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1>Todo List</h1>
+      <form id="inputForm">
+        <input
+          type="text"
+          autocomplete="off"
+          id="todoItemInput"
+          placeholder="item"
+        />
+      </form>
+
+      <div id="listContainer" class="list-container"></div>
+      <div class="no-elments">Ooops! List is empty</div>
+    </div>
+
+    <template id="todo">
+      <li>
+        <span class="text"></span>
+        <span class="edit">✏️</span>
+        <span class="delete">🗑️</span>
+      </li>
+    </template>
+  </body>
+</html>
